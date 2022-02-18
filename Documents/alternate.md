@@ -6,13 +6,15 @@ The Conforming Alternate Version Test Conditions deviate slightly from the remai
 
 -   While it is important to identify conforming alternate versions to define the test scope, it will not be possible to determine if a conforming alternate version was provided until all other applicable tests are completed. (It cannot be a conforming alternate version if it does not pass all applicable Test Conditions.)
 
--   The results for Conforming Alternate Version Test Conditions do not follow the **TRUE=PASS, FALSE=FAIL, DOES NOT APPLY (DNA)** pattern that the rest of the Test Conditions follow. Providing a conforming alternate version is not a requirement. Rather, it is an acceptable method to provide the same information and/or functionality in an accessible manner when other non-conforming version(s) of that content exist. Therefore, **FAIL** is not an appropriate test result. When a Test Condition is **TRUE**, the Test Condition result is **PASS**. If a Test Condition is **FALSE**, a conforming alternate version does not exist and the Test Condition result is **DOES NOT APPLY**.
+-   Providing a conforming alternate version is not a requirement. Rather, it is an acceptable method to provide the same information and/or functionality in an accessible manner when other non-conforming version(s) of that content exist. Therefore, **FAIL** is not an appropriate test result for conformance requirement #1.  However, if a version of content is identified or proposed as the conforming alternate, the following tests are applied to that proposed alternate and scored accordingly.
 
 ### Alternate Version Accessibility
 
 #### Identify Content
 
 Identify multiple versions of the same content, i.e. content that has been provided in more than one way and with the explicit or implicit intent that one or more is provided as an accessible alternative.
+
+In some cases, a conforming alternate is identified by the developer. In others, alternates are identified by the tester, e.g. an alternate user control on a web page, or a document format.
 
 1.  Alternate versions may be provided for a part of the page, entire pages, or an entire site.
 
@@ -30,7 +32,7 @@ Identify multiple versions of the same content, i.e. content that has been provi
 
     -   User controls to modify colors and text appearance
 
-3.  The alternate version(s) does not need to reside within the scope of conformance, or even on the same web site, as long as it is as freely available as the non-conforming version. For this test process, scope of testing is limited to alternatives that are available on a desktop computer. Alternate versions do not include mobile applications that can only be accessed on a mobile device.
+3.  An alternate version does not need to reside within the scope of conformance, or even on the same web site, as long as it is as freely available as the non-conforming version. For this test process, scope of testing is limited to alternatives that are available on a desktop computer. Alternate versions do not include mobile applications that can only be accessed on a mobile device.
 
 If there is only one version of content, the result for the following test ID(s) is **DOES NOT APPLY**: 1.A to 1.E.
 
@@ -38,7 +40,7 @@ If there is only one version of content, the result for the following test ID(s)
 
 | Test Name              | Test ID | Test Condition                                                                                                              |
 |------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------|
-| alt-version-conformant | 1.A     | <span id="OLE_LINK2" class="anchor"></span>An alternate version passes all applicable Test Conditions in this test process. |
+| alt-version-conformant | 1.A     | <span id="OLE_LINK2" class="anchor"></span>A proposed alternate version passes all applicable Test Conditions in this test process. |
 
 ##### Applicability:
 
@@ -56,21 +58,30 @@ This Test Condition **DOES NOT APPLY (DNA)** if there is only one version of con
 
     2.  If a failure is found in the identified ‘accessible’ version, enter FAIL for the appropriate Test ID. It is not necessary to continue testing for this test (ID 1.A) after a failure has been found. Evaluate results.
 
-    3.  If none of the versions is identified for accessibility, test all versions until a version that passes all applicable Test Conditions is found.
+    3.  If none of the versions is proposed as the conforming version, test all versions until a version that passes all applicable Test Conditions is found. (This is meant to apply to parts of a site or page, such as a document or a form control, rather than an entire site.)
 
         1.  If a failure is found in a version, stop testing that version and test the other version(s).
 
 ##### Evaluate Results: 
 
-If the following is **TRUE**, then the content **PASSES**; if the following is **FALSE**, then this Test Condition **DOES NOT APPLY** **(DNA)**:
+If the following is **TRUE**, then the content **PASSES**; if the following is **FALSE**, then this Test Condition **FAILS**: **CS 1. Gets rid of circular reference**
 
 1.  There is an accessible alternate version of content that passes all applicable Test Conditions in this test process.
 
 If the result of this test condition is:
 
--   **PASSES**, continue to 1.B. The accessible alternate version (that passed this 1.A. test) will be referred to as the “accessible version” in subsequent tests.
+-   **PASSES**, continue to 1.B. **CS 2. With meaning of “proposed” alternate, subsequent tests 1.B-1.D can still be done to identify failures, vs. if this was just DNA.**
 
--   **DOES NOT APPLY (DNA)**, mark the results for the remaining Conforming Alternate Version Test Conditions (1.B - 1.E) as **DOES NOT APPLY (DNA)** and continue testing all versions with subsequent test conditions. All versions of the content should be tested and included in the test report.
+-   **DOES NOT APPLY (DNA)**, mark the results for the remaining Conforming Alternate Version Test Conditions (1.B - 1.E) as **DOES NOT APPLY (DNA)**. For parts of a site or page (not an entire site) {or: Except for alternate versions of entire web sites}, continue testing all versions with subsequent test conditions. All versions of the content should be tested and included in the test report. 
+-   **CS 4. Restricts instruction to exclude entire web sites**
+-   **KE If an entire site has an alternate version, then I suggest modifying the reported content to just be “Application A – accessibility enabled version only” or something to narrow the scope of the report.**
+
+From Understanding Conformance Requirement 1: all information on a page conforms or has a conforming alternate version that is available from the page.
+
+If testing of an application does not include all content, then it cannot claim conformance to a WCAG level (and therefore cannot claim 508 conformance).
+
+
+**CS 3. DNA now restricted to case where there is no alternate or none is proposed**
 
 ###### Note:
 
@@ -78,7 +89,7 @@ If the result of this test condition is:
 
 -   It may be helpful to review product documentation for information about accessible versions or enabling accessibility.
 
--   While testing for the Alternate Version Test Conditions may halt when the identified “accessible” version has a failed Test Condition, further testing of the version may be necessary to complete the other tests in this test process. When there is no conforming alternative, all versions of the content should be tested and included in the test report.
+-   While testing for the Alternate Version Test Conditions may halt when the proposed “accessible” version has a failed Test Condition, further testing of the version may be necessary to complete the other tests in this test process. For parts of a site or page, when there is no conforming alternative, all versions of the content should be tested and included in the test report. **CS 5. Restricts instruction to exclude entire web sites**
 
 #### Check alt-version-equivalent
 
