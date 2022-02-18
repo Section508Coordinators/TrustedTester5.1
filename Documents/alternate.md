@@ -262,6 +262,8 @@ The non-conforming version(s) of the content that has a conforming alternate ver
 
 If the test results for both 1.C and 1.D are **DOES NOT APPLY**, the result for the following test ID is **DOES NOT APPLY**: 1.E.
 
+If the test results for either 1.C and 1.D are **FAIL**, the result for the following test ID is **FAIL**: 1.E.
+
 #### Check non-interference
 
 | Test Name        | Test ID | Test Condition                                                            |
