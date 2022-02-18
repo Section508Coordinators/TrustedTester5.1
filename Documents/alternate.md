@@ -206,7 +206,7 @@ If the test result for 1.A or 1.B is **DOES NOT APPLY**, the result for the foll
 
 | Test Name             | Test ID | Test Condition                                                                                                        |
 |-----------------------|---------|-----------------------------------------------------------------------------------------------------------------------|
-| alt-version-nc-access | 1.D     | <span id="OLE_LINK8" class="anchor"></span>The non-conforming version(s) can only be reached from conforming content. |
+| alt-version-nc-access | 1.D     | <span id="OLE_LINK8" class="anchor"></span>The non-conforming version(s) can only be reached from proposed conforming content. |
 
 ##### Applicability:
 
@@ -222,9 +222,9 @@ This Test Condition **DOES NOT APPLY** if:
 
 1.  Identify how the non-conforming version(s) of the content can be accessed
 
-    1.  The non-conforming version can only be accessed from the accessible equivalent version.
+    1.  The non-conforming version can only be accessed from the proposed accessible equivalent version.
 
-    2.  Both the accessible equivalent version and the non-conforming version are accessed from another page.
+    2.  Both the proposed accessible equivalent version and the non-conforming version are accessed from another page.
 
         1.  Does the page providing access conform to all applicable test processes?
 
@@ -232,23 +232,23 @@ This Test Condition **DOES NOT APPLY** if:
 
 ##### Evaluate Results: 
 
-If any of the following is **TRUE**, then the content **PASSES.** if the following are all **FALSE**, then this Test Condition **DOES NOT APPLY** **(DNA)**:
+If any of the following is **TRUE**, then the content **PASSES.** if the following are all **FALSE**, then this Test Condition **FAILS**:
 
-1.  The non-conforming version can only be reached from the accessible equivalent version (that passed Test ID 1.B), OR
+1.  The non-conforming version can only be reached from the proposed accessible equivalent version, OR
 
 2.  The non-conforming version can only be reached from a page that:
 
     1.  passes all other Test Conditions AND
 
-    2.  also provides a mechanism to reach the accessible equivalent version (that passed Test ID 1.A and 1.B)
+    2.  also provides a mechanism to reach the proposed accessible equivalent version
 
-Either test condition 1.C OR 1.D must **PASS** for a conforming alternate version to exist. If the result of this test condition is:
+Either test condition 1.C OR 1.D must **PASS** for a proposed conforming alternate version. If the result of this test condition is:
 
 -   **PASSES**, continue testing 1.E.
 
--   **DOES NOT APPLY (DNA)** AND you marked 1.C as **PASSES,** continue testing 1.E.
+-   **FAILS** or **DOES NOT APPLY (DNA)** AND you marked 1.C as **PASSES,** continue testing 1.E.
 
--   **DOES NOT APPLY (DNA)** AND you marked 1.C as **DOES NOT APPLY (DNA),** mark 1.E as **DOES NOT APPLY (DNA)** and continue testing all versions with subsequent test conditions.
+-   **FAILS** or **DOES NOT APPLY (DNA)** AND you marked 1.C as **FAILS** or **DOES NOT APPLY (DNA),** mark 1.E as **DOES NOT APPLY (DNA)** and, if part of a site or page (not an entire site), continue testing all versions with subsequent test conditions.
 
 ###### Note:
 
