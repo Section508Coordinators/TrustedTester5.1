@@ -120,7 +120,7 @@ If the result of this test condition is:
 
 #### Identify Content
 
-A page with the non-conforming version of the content that also provides a mechanism, method, or path for the user to reach the accessible equivalent version of the content (that passed Test 1.B).
+A page with the non-conforming version of the content that also provides a mechanism, method, or path for the user to reach the proposed accessible equivalent version of the content. **CS: can continue testing**
 
 Various methods may be used to reach an alternate version, including:
 
@@ -138,7 +138,7 @@ If the test result for 1.A or 1.B is **DOES NOT APPLY**, the result for the foll
 
 -   the user first encounters the non-conforming content and must navigate to accessible alternate version (tested in 1.C) OR
 
--   the user is NOT presented with the non-conforming version of content first (skip to test 1.D).
+-   the user is presented with the conforming version of content first (skip to test 1.D). **CS: does this mean the same thing?**
 
 > Either 1.C or 1.D must PASS; both do not apply simultaneously to the same accessible equivalent version.
 
@@ -146,19 +146,19 @@ If the test result for 1.A or 1.B is **DOES NOT APPLY**, the result for the foll
 
 | Test Name          | Test ID | Test Condition                                                                                                                                                                             |
 |--------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| alt-version-access | 1.C     | <span id="OLE_LINK5" class="anchor"><span id="OLE_LINK6" class="anchor"></span></span>The mechanism to reach the accessible equivalent version from the non-conforming page is accessible. |
+| alt-version-access | 1.C     | <span id="OLE_LINK5" class="anchor"><span id="OLE_LINK6" class="anchor"></span></span>The mechanism to reach the proposed accessible  version from the non-conforming page is accessible. |
 
 ##### Applicability:
 
-This Test Condition **DOES NOT APPLY** if there is only one version of content, if Test ID 1.A or 1.B was evaluated as **DOES NOT APPLY** **(DNA)**, or if the user is NOT presented with the non-conforming version of content first (move to test 1.D).
+This Test Condition **DOES NOT APPLY** if there is only one version of content, or if the user is presented with the conforming version of content first (move to test 1.D).
 
 ##### How to Test:
 
 1.  Continue from Test 1.B.
 
-2.  Identify the mechanism used to reach the accessible equivalent version (that passed Test 1.B).
+2.  Identify the mechanism used to reach the proposed accessible equivalent version.
 
-    1.  If necessary, go back to the page that provided the mechanism to select or enable the accessible version.
+    1.  If necessary, go back to the page that provided the mechanism to select or enable the proposed accessible version.
 
     2.  This may be a link or some function that is on a non-conforming page
 
@@ -168,21 +168,16 @@ This Test Condition **DOES NOT APPLY** if there is only one version of content, 
 
 ##### Evaluate Results: 
 
-If the following is **TRUE**, then the content **PASSES.** If the following is **FALSE**, then this Test Condition **DOES NOT APPLY** **(DNA)**:
+If the following is **TRUE**, then the content **PASSES.** If the following is **FALSE**, then this Test Condition **FAILS**:
 
-1.  The mechanism used to reach the accessible equivalent version passes all applicable Test Conditions.
+1.  The mechanism used to reach the proposed accessible equivalent version passes all applicable Test Conditions.
 
-Either test condition 1.C OR 1.D must **PASS** for a conforming alternate version to exist. If the result of test condition 1.C is:
+Either test condition 1.C OR 1.D must **PASS** for a proposed conforming alternate version. If the result of test condition 1.C is:
 
 -   **PASSES**, mark 1.D as **DOES NOT APPLY (DNA)**, continue testing 1.E.
 
 <!-- -->
 
--   **DOES NOT APPLY (DNA)**, because:
-
-    -   the test condition was not applicable (the non-conforming version was not the first presented version), continue testing 1.D.
-
-    -   the mechanism from the non-conforming page is not accessible, mark 1.D and 1.E as **DOES NOT APPLY (DNA)** and continue testing all versions with subsequent test conditions.
 
 ###### Note:
 
