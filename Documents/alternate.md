@@ -84,7 +84,7 @@ If the result of this test condition is:
 
 | Test Name              | Test ID | Test Condition                                                                    |
 |------------------------|---------|-----------------------------------------------------------------------------------|
-| alt-version-equivalent | 1.B     | The accessible version is up to date with the same information and functionality. |
+| alt-version-equivalent | 1.B     | The proposed accessible version is up to date with the same information and functionality. |
 
 ##### Applicability:
 
@@ -100,21 +100,21 @@ This Test Condition **DOES NOT APPLY** if Test ID 1.A was evaluated as **DOES NO
 
 ##### Evaluate Results: 
 
-If the following is **TRUE**, then the content **PASSES.** If the following is **FALSE**, then this Test Condition **DOES NOT APPLY** **(DNA)**:
+If the following is **TRUE**, then the content **PASSES.** If the following is **FALSE**, then this Test Condition **FAILS**:
 
-1.  The accessible version (that passed 1.A) provides all of the same information and functionality in the same human language as the non-conforming content.
+1.  The proposed accessible version provides all of the same information and functionality in the same human language as the non-conforming content.
 
 If the result of this test condition is:
 
 -   **PASSES**, continue to 1.C.
 
--   **DOES NOT APPLY (DNA),** mark 1.C - 1.E as **DOES NOT APPLY (DNA)** and continue testing all versions with subsequent test conditions. All versions of the content should be tested and included in the test report.
+-   **DOES NOT APPLY (DNA),** mark 1.C - 1.E as **DOES NOT APPLY (DNA)** and, for parts of a site or page, continue testing all versions with subsequent test conditions. All versions of the content should be tested and included in the test report.
 
 ###### Note:
 
 -   The accessible version does not need to be matched page for page with the original (e.g., the accessible version may consist of more or fewer pages).
 
--   While testing for the Alternate Version Test Conditions may halt when the identified “accessible” version has a failed Test Condition, further testing of the version may be necessary to complete the other tests in this test process. When there is no conforming alternative, all versions of the content should be tested and included in the test report.
+-   While testing for the Alternate Version Test Conditions may halt when the proposed “accessible” version has a failed Test Condition, further testing of the version may be necessary to complete the other tests in this test process. For parts of a site or page, when there is no conforming alternative, all versions of the content should be tested and included in the test report.
 
 ### Access to the Accessible Alternate Version
 
